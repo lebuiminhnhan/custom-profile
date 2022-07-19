@@ -5,59 +5,61 @@
 <!-- ==========================
   HEADER SECTION
   =========================== -->
-  <header id="home">
+<header id="home">
   <!-- creative menu -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="menu-wrap">
-  <nav class="menu">
-      <!-- Menu Links -->
-    <div class="icon-list">
-      <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-      <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-      <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
-      <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-      <a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
-      <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="menu-wrap">
+        <nav class="menu">
+          <!-- Menu Links -->
+          <div class="icon-list">
+            <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+            <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+            <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+            <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+            <a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
+            <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+          </div>
+        </nav>
+      </div>
+      <button class="menu-button" id="open-button"></button><!-- menu button -->
     </div>
-  </nav>
-    </div>
-    <button class="menu-button" id="open-button"></button><!-- menu button -->
-        </div><!--/row-->
-      </div><!--/container-->
-<!-- Header Image -->
-    <section class="hero" id="hero">
-      <div class="container">
-  <!-- Slider Button (don't edit!)-->
-        <div class="row">
-          <div class="col-md-12 text-right navicon">
-            <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-          </div>
-        </div>
-  <!-- HEADER HEADLINE -->
-        <div class="row">
-          <div class="col-md-8 col-md-offset-1 inner">
-            <h1 class="animated fadeInDown">
-              L<span style="color:#E04343;">ữ </span>
-              <span>Á<span style="color:#FFE800;">i</span></span>
-              <span><span style="color:#FFE453"> V</span>Y</span>
-            </h1><!-- Title -->
-            <h3 class="animated fadeInUp delay-05s"><span class="rotate">Singer</span></h3><!-- Text Rotator -->
-          </div>
-        </div>
-  <!-- Learn More Button -->
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-            <p>SEE MORE</p>
-            <p class="scrollto--arrow"><img src="assets/img/scroll-down.png" alt="scroll down arrow"></p>
-        </a>
-          </div>
+    <!--/row-->
+  </div>
+  <!--/container-->
+  <!-- Header Image -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <!-- Slider Button (don't edit!)-->
+      <div class="row">
+        <div class="col-md-12 text-right navicon">
+          <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
         </div>
       </div>
-    </section>
-<!-- Header Image End -->
-  </header>
+      <!-- HEADER HEADLINE -->
+      <div class="row">
+        <div class="col-md-12 col-md-offset-0 pt-sm-5 mt-sm-5 inner">
+          <h1 class="animated fadeInDown">
+            <span style="color:#A0A8AF;">L</span><span style="color:#E04343;">ữ </span>
+            <span>Á<span style="color:#FFE800;">i</span></span>
+            <span><span style="color:#1de712"> V</span>Y</span>
+          </h1><!-- Title -->
+          <h3 class="animated fadeInUp delay-05s"><span class="rotate">Ca sĩ</span></h3><!-- Text Rotator -->
+        </div>
+      </div>
+      <!-- Learn More Button -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center text-primary">
+          <a (click)="scroll(about)"class="scrollto wow fadeInUp delay-5s cursor-pointer">
+            <p>XEM THÊM</p>
+            <p class="scrollto--arrow"><img src="assets/img/scroll-down.png" alt="scroll down arrow"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header Image End -->
+</header>
 <!-- ==========================
   HEADER SECTION END
   =========================== -->
@@ -65,111 +67,63 @@
 
 
 
-<!-- ==========================
-  ABOUT SECTION
-  =========================== -->
-  <section class="intro text-center section-padding color-bg" id="about">
-    <div class="container">
-  <!-- WELCOME TEXT -->
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 wp1">
-          <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
-  <!-- about / welcome text -->
-          <p>I am enough of an artist to draw freely upon my imagination. The point is that when I see a sunset or a <a href="#">waterfall</a> or something, for a split second it's so great, because for a little bit I'm out of my brain, and it's got nothing to do with me. I'm not trying to figure it out, you know what I mean? And I wonder if I can somehow find a way to maintain that mind stillness.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-<!-- ==========================
-  SERVICE SECTION
-  =========================== -->
-  <section class="features text-center section-padding" id="service">
-    <div class="container">
-  <!-- Headline -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="arrow">I do amazing things for clients</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-    <div class="services">
-    <!-- Service Box 1 -->
-            <div class="col-md-4 wp2 item">
-              <div class="icon">
-                <i class="fa fa-camera"></i><!-- Icon -->
-              </div>
-              <h2>Photographer</h2><!-- Title -->
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus.</p><!-- Description -->
-            </div>
-    <!-- Service Box 2 -->
-            <div class="col-md-4 wp2 item delay-05s">
-              <div class="icon">
-                <i class="fa fa-desktop"></i><!-- Icon -->
-              </div>
-              <h2>Web Designer</h2><!-- Title -->
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus.</p><!-- Description -->
-            </div>
-    <!-- Service Box 3 -->
-            <div class="col-md-4 wp2 item delay-1s">
-              <div class="icon">
-                <i class="fa fa-cubes"></i><!-- Icon -->
-              </div>
-              <h2>3D Artist</h2><!-- Title -->
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus.</p><!-- Description -->
-            </div>
-    </div>
-            <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-<div class="container-fluid">
+<div class="container-fluid" #about>
   <!-- About 1 -->
-<div class="row color-bg">
-  <div class="col-md-6 nopadding features-intro-img">
-    <div class="about-image" style="background-image:url(assets/img/about1.png)"></div><!-- about image 1 -->
+  <div class="row color-bg">
+    <div class="col-md-6 nopadding features-intro-img">
+      <div class="about-image" style="background-image:url(assets/img/header-bg.jpg)"></div><!-- about image 1 -->
+    </div>
+    <div class="col-md-6 about-text">
+      <h6>Thông tin cá nhân</h6>
+      <p class="font-weight-bold">Nguyễn Thị Tường Vi - 1997</p><br>
+      <p>
+        Lữ Ái Vy tốt nghiệp khoa Thanh nhạc
+        trường Đại học Văn hoá Nghệ thuật
+        Quân Đội khoá 2016 - 2020
+      </p>
+      <p>
+        Từng tham gia chương trình Giọng ca
+        Bất Bại năm 2018 và Tiếng hát
+        truyền hình toàn quốc Sao Mai 2019
+      </p>
+    </div>
   </div>
-  <div class="col-md-6 about-text">
-    <h6>High quality webdesign</h6><!-- headline-->
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 1 -->
-    <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+  <!-- About 2 -->
+  <div class="row">
+    <div class="col-md-6 about-text">
+      <h6>Lĩnh vực hoạt động</h6>
+      <p>Bên cạnh hoạt động trong vai trò
+        ca sĩ tự do và sản xuất các dự án
+        âm nhạc cá nhân, Lữ Ái Vy còn là
+        giảng viên thanh nhạc, ca sĩ
+        diễn viên Nhà hát Quân đội,
+        hợp tác biểu diễn với Đài truyền
+        hình Tp.HCM HTV, Đài truyền
+        hình Việt Nam- VTV, các phòng
+        trà và sự kiện lớn nhỏ tại Tp.HCM.</p>
+      <br>
+      <p></p>
+
+    </div>
+    <div class="col-md-6 nopadding features-intro-img">
+      <div class="about-image" style="background-image:url(assets/img/about2.png)"></div><!-- about image 2 -->
+    </div>
   </div>
-</div>
-<!-- About 2 -->
-<div class="row">
-  <div class="col-md-6 about-text">
-    <h6>Professional Photography</h6><!-- Headline -->
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 2 -->
-    <a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->
+  <!-- About 3 -->
+  <div class="row color-bg">
+    <div class="col-md-6 nopadding features-intro-img">
+      <div class="about-image" style="background-image:url(assets/img/about3.png)"></div><!-- about image 3 -->
+    </div>
+    <div class="col-md-6 about-text">
+      <h6>3d modeling and animations</h6><!-- Headline-->
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+      <br><!-- About Text 3 -->
+      <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+    </div>
   </div>
-  <div class="col-md-6 nopadding features-intro-img">
-    <div class="about-image" style="background-image:url(assets/img/about2.png)"></div><!-- about image 2 -->
-  </div>
-</div>
-<!-- About 3 -->
-<div class="row color-bg">
-  <div class="col-md-6 nopadding features-intro-img">
-    <div class="about-image" style="background-image:url(assets/img/about3.png)"></div><!-- about image 3 -->
-  </div>
-  <div class="col-md-6 about-text">
-    <h6>3d modeling and animations</h6><!-- Headline-->
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 3 -->
-    <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
-  </div>
-</div>
 </div>
 <!-- ==========================
   ABOUT SECTION END
@@ -181,101 +135,119 @@
 <!-- ==========================
   PORTFOLIO SECTION
 =========================== -->
-  <section class="swag text-center" id="portfolio">
-    <div class="container">
-  <!-- Headline -->
-      <div class="row">
-        <h1 class="arrow">
-          Recent <span>Porojects</span>
-        </h1>
-      </div>
-    </div>
-  </section>
-
+<section class="swag text-center" id="portfolio">
   <div class="container">
-    <div class="row row-offset-0">
+    <!-- Headline -->
+    <div class="row justify-content-center">
+      <h1 class="arrow">
+        Recent <span>Porojects</span>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<div>
+  <div class="row row-offset-0">
 
     <!-- PORTFOLIO ITEM 1 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip" title="Project One - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip"
+            title="Project One - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-  <!-- PORTFOLIO ITEM 2 -->
+    <!-- PORTFOLIO ITEM 2 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip" title="Project Two - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip"
+            title="Project Two - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-<!-- PORTFOLIO ITEM 3 -->
+    <!-- PORTFOLIO ITEM 3 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip" title="Project Three - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip"
+            title="Project Three - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-<!-- PORTFOLIO ITEM 4 -->
+    <!-- PORTFOLIO ITEM 4 -->
     <div class="col-md-3 col-sm-6 ">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip" title="Project Four - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip"
+            title="Project Four - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
     <!-- PORTFOLIO ITEM 5 -->
     <div class="col-md-3 col-sm-6 ">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip" title="Project Five - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-05-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip"
+            title="Project Five - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-05-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-  <!-- PORTFOLIO ITEM 6 -->
+    <!-- PORTFOLIO ITEM 6 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip" title="Project Six - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-06-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip"
+            title="Project Six - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-06-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-<!-- PORTFOLIO ITEM 7 -->
+    <!-- PORTFOLIO ITEM 7 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip" title="Project Seven - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-07-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip"
+            title="Project Seven - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-07-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
+    <!-- PORTFOLIO ITEM END -->
 
-<!-- PORTFOLIO ITEM 8 -->
+    <!-- PORTFOLIO ITEM 8 -->
     <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-            <div class="img">
-                <a href="assets/img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip" title="Project Eight - Lorem Ipsum"><img class="grayscale" src="assets/img/portfolio/portfolio-08-thumbnail.jpg" alt="Portfolio Item"></a>
-            </div>
+      <div class="overlay-effect effects clearfix">
+        <div class="img">
+          <a href="assets/img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip"
+            title="Project Eight - Lorem Ipsum"><img class="grayscale"
+              src="assets/img/portfolio/portfolio-08-thumbnail.jpg" alt="Portfolio Item"></a>
         </div>
+      </div>
     </div>
-  <!-- PORTFOLIO ITEM END -->
-  </div><!--/row-->
-</div><!--/.container-->
+    <!-- PORTFOLIO ITEM END -->
+  </div>
+  <!--/row-->
+</div>
+<!--/.container-->
 <!-- ==========================
   PORTFOLIO SECTION END
   =========================== -->
@@ -287,14 +259,14 @@
   CUSTOM SPACER
   =========================== -->
 <div class="spacer-cta text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a href="index.html#contact" class="outline-btn">hire john doe</a>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="index.html#contact" class="outline-btn">hire john doe</a>
       </div>
     </div>
   </div>
+</div>
 <!-- ==========================
   CUSTOM SPACER END
   =========================== -->
@@ -315,23 +287,38 @@
   CLIENT SECTION
   =========================== -->
 <div class="container-fluid">
-<div class="row color-bg">
-  <!-- Left Image -->
-  <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
-    <div class="about-image" style="background-image:url(assets/img/clients.png)"></div>
-  </div>
-  <!-- Clients / Testimonials -->
-  <div class="col-md-6 nopadding about-text">
-  <h6>What our clients said</h6>
-    <div id="clientSlider">
-       <ul class="slides">
-           <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Pete Rock, A New Tomorrow</small></p></li>
-         <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Michael Snowden, Creativeland CEO</small></p></li>
-        <li><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>	<small>- Tom Davis, GreenWonder</small></p>	</li>
-       </ul>
+  <div class="row color-bg">
+    <!-- Left Image -->
+    <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+      <div class="about-image" style="background-image:url(assets/img/clients.png)"></div>
+    </div>
+    <!-- Clients / Testimonials -->
+    <div class="col-md-6 nopadding about-text">
+      <h6>What our clients said</h6>
+      <div id="clientSlider">
+        <ul class="slides">
+          <li>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Pete
+                Rock, A New Tomorrow</small></p>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Michael
+                Snowden, Creativeland CEO</small></p>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Tom
+                Davis, GreenWonder</small></p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </div>
 <!-- ==========================
   CLIENTS SECTION END
@@ -344,22 +331,22 @@
 <!-- ==========================
   NEWSLETTER SECTION
   =========================== -->
-  <section>
-<div class="container-fluid">
-  <div class="row color-bg">
+<section>
+  <div class="container-fluid">
+    <div class="row color-bg">
       <div class="col-md-6 nopadding subscribe text-center">
-     <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
-               <form action="index.html#">
-                 <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
-                 <input type="submit" name="" value="Send"><!-- Submit Button -->
-              </form>
-    </div>
-    <div class="col-md-6 nopadding features-intro-img">
-       <div class="about-image" style="background-image:url(assets/img/newsletter.png)"></div><!-- Right Image -->
+        <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
+        <form action="index.html#">
+          <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
+          <input type="submit" name="" value="Send"><!-- Submit Button -->
+        </form>
+      </div>
+      <div class="col-md-6 nopadding features-intro-img">
+        <div class="about-image" style="background-image:url(assets/img/newsletter.png)"></div><!-- Right Image -->
+      </div>
     </div>
   </div>
-</div>
-  </section>
+</section>
 <!-- ==========================
   NEWSLETTER SECTION END
   =========================== -->
@@ -369,88 +356,88 @@
 <!-- ==========================
   CONTACT SECTION
   =========================== -->
-  <section class="text-center section-padding contact-wrap" id="contact">
-<!-- To Top Button -->
-    <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-    <div class="container">
-  <!-- Headline -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="arrow">Drop <span>me</span> a line</h1>
+<section class="text-center section-padding contact-wrap" id="contact">
+  <!-- To Top Button -->
+  <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+  <div class="container">
+    <!-- Headline -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="arrow">Drop <span>me</span> a line</h1>
+      </div>
+    </div>
+    <div class="row contact-details">
+      <!-- Adress Box -->
+      <div class="col-md-4">
+        <div class="dark-box box-hover">
+          <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+          <p>23 Ipsum street, New York</p>
         </div>
       </div>
-      <div class="row contact-details">
-  <!-- Adress Box -->
-        <div class="col-md-4">
-          <div class="dark-box box-hover">
-            <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-            <p>23 Ipsum street, New York</p>
-          </div>
-        </div>
-  <!-- Phone Number Box -->
-        <div class="col-md-4">
-          <div class="dark-box box-hover">
-            <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-            <p>+12 345 6789</p>
-          </div>
-        </div>
-  <!-- E-Mail Box -->
-        <div class="col-md-4">
-          <div class="dark-box box-hover">
-            <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-            <p><a href="index.html#">info@themewagon.com</a></p>
-          </div>
+      <!-- Phone Number Box -->
+      <div class="col-md-4">
+        <div class="dark-box box-hover">
+          <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+          <p>+12 345 6789</p>
         </div>
       </div>
-<div class="row">
-  <!-- Google Maps (Change your Settings below) -->
-  <div class="col-md-6">
-    <div id="googlemaps"></div>
-  </div>
-  <!-- Contact Form -->
-  <div class="col-md-6 contact">
-     <form role="form">
-              <!-- Name -->
-                      <div class="row">
-                          <div class="col-md-6">
-              <!-- E-Mail -->
-                              <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Your name">
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-              <!-- Phone Number -->
-                              <div class="form-group">
-                                  <input type="email" class="form-control" placeholder="Email address">
-                              </div>
-                          </div>
-                      </div>
-        <!-- Message Area -->
-                      <div class="form-group">
-                          <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
-                      </div>
-        <!-- Subtmit Button -->
-                      <button type="submit" class="btn btn-send">
-                          Send message
-                      </button>
-                  </form>
-  </div>
-</div>
-<br>
-<!-- Social Buttons - use font-awesome, past in what you want -->
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="social-buttons">
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-    <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
-    <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
-          </ul>
+      <!-- E-Mail Box -->
+      <div class="col-md-4">
+        <div class="dark-box box-hover">
+          <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+          <p><a href="index.html#">info@themewagon.com</a></p>
         </div>
       </div>
     </div>
-  </section>
+    <div class="row">
+      <!-- Google Maps (Change your Settings below) -->
+      <div class="col-md-6">
+        <div id="googlemaps"></div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-md-6 contact">
+        <form role="form">
+          <!-- Name -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- E-Mail -->
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Phone Number -->
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email address">
+              </div>
+            </div>
+          </div>
+          <!-- Message Area -->
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+          </div>
+          <!-- Subtmit Button -->
+          <button type="submit" class="btn btn-send">
+            Send message
+          </button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <!-- Social Buttons - use font-awesome, past in what you want -->
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="social-buttons">
+          <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
+          <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+          <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+          <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
+          <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ==========================
   CONTACT SECTION END
   =========================== -->
@@ -460,12 +447,12 @@
 <!-- ==========================
   FOOTER SECTION
   =========================== -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
-        </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>

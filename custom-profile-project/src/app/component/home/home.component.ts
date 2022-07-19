@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserModel } from 'src/app/model/UserModel';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  userModel = new UserModel();
   constructor() { }
 
   ngOnInit() {
   }
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView(
+      {
+        behavior: 'smooth'
+      }
+    );
+}
 
 }
