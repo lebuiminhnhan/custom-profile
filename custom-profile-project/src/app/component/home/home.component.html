@@ -1,11 +1,11 @@
 <!-- ****************************** Preloader ************************** -->
 <div id="preloader"></div>
-
+<div class="show-menu"></div>
 
 <!-- ==========================
   HEADER SECTION
   =========================== -->
-<header id="home">
+<header id="home" #home>
   <!-- creative menu -->
   <div class="container-fluid">
     <div class="row">
@@ -13,16 +13,16 @@
         <nav class="menu">
           <!-- Menu Links -->
           <div class="icon-list">
-            <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-            <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-            <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
-            <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-            <a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
-            <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            <a (click)="scroll(home)"><i class="mdi mdi-home"></i><span>Trang Chủ</span></a>
+            <a (click)="scroll(about)"><i class="mdi mdi-account-card-details"></i><span>Thông tin cá nhân</span></a>
+            <a (click)="scroll(service)"><i class="mdi mdi-audiobook"></i><span>Các sản phẩm</span></a>
+            <a (click)="scroll(image)"><i class="mdi mdi-file-image"></i><span>Hình ảnh nổi bật</span></a>
+            <a (click)="scroll(video)"><i class="mdi mdi-file-video"></i><span>Thông tin thêm</span></a>
+            <a (click)="scroll(contact)"><i class="mdi mdi-contact-mail"></i><span>Liên hệ</span></a>
           </div>
         </nav>
       </div>
-      <button class="menu-button" id="open-button"></button><!-- menu button -->
+      <button class="menu-button" id="open-button" (click)="showMenu()"></button><!-- menu button -->
     </div>
     <!--/row-->
   </div>
@@ -50,7 +50,7 @@
       <!-- Learn More Button -->
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center text-primary">
-          <a (click)="scroll(about)"class="scrollto wow fadeInUp delay-5s cursor-pointer">
+          <a (click)="scroll(about)" class="scrollto wow fadeInUp delay-5s cursor-pointer">
             <p>XEM THÊM</p>
             <p class="scrollto--arrow"><img src="assets/img/scroll-down.png" alt="scroll down arrow"></p>
           </a>
@@ -71,7 +71,7 @@
   <!-- About 1 -->
   <div class="row color-bg">
     <div class="col-md-6 nopadding features-intro-img">
-      <div class="about-image" style="background-image:url(assets/img/header-bg.jpg)"></div><!-- about image 1 -->
+      <div class="about-image" style="background-image:url(assets/img/portfolio/img1.jpg)"></div><!-- about image 1 -->
     </div>
     <div class="col-md-6 about-text">
       <h6>Thông tin cá nhân</h6>
@@ -106,41 +106,51 @@
 
     </div>
     <div class="col-md-6 nopadding features-intro-img">
-      <div class="about-image" style="background-image:url(assets/img/about2.png)"></div><!-- about image 2 -->
-    </div>
-  </div>
-  <!-- About 3 -->
-  <div class="row color-bg">
-    <div class="col-md-6 nopadding features-intro-img">
-      <div class="about-image" style="background-image:url(assets/img/about3.png)"></div><!-- about image 3 -->
-    </div>
-    <div class="col-md-6 about-text">
-      <h6>3d modeling and animations</h6><!-- Headline-->
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-      <br><!-- About Text 3 -->
-      <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+      <div class="about-image" style="background-image:url(assets/img/portfolio/img2.jpg)"></div><!-- about image 2 -->
     </div>
   </div>
 </div>
-<!-- ==========================
-  ABOUT SECTION END
-  =========================== -->
 
-
-
-
-<!-- ==========================
-  PORTFOLIO SECTION
-=========================== -->
-<section class="swag text-center" id="portfolio">
+<section class="swag text-center" id="portfolio" #service>
   <div class="container">
     <!-- Headline -->
     <div class="row justify-content-center">
       <h1 class="arrow">
-        Recent <span>Porojects</span>
+        các <span>Sản phẩm</span>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<div class="row row-offset-0">
+  <div class="col-md-12 col-sm-12">
+    <div class="p-3 text-center">
+      <a target="_blank" href="https://www.youtube.com/watch?v=LhEtY-GZ0LU" class="outline-btn color-bg" id="demo"></a>
+    </div>
+    <div>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/LhEtY-GZ0LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <div>
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/S8LgK5PkffE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <div>
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/K5aob7Z4MaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<section class="swag text-center" id="portfolio" #image>
+  <div class="container">
+    <!-- Headline -->
+    <div class="row justify-content-center">
+      <h1 class="arrow">
+        Hình ảnh <span>Nổi bật</span>
       </h1>
     </div>
   </div>
@@ -148,26 +158,19 @@
 
 <div>
   <div class="row row-offset-0">
-
-    <!-- PORTFOLIO ITEM 1 -->
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip"
-            title="Project One - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/1.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/1.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
-    <!-- PORTFOLIO ITEM END -->
-
-    <!-- PORTFOLIO ITEM 2 -->
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip"
-            title="Project Two - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/2.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/2.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -177,9 +180,8 @@
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip"
-            title="Project Three - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/3.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/3.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -189,9 +191,8 @@
     <div class="col-md-3 col-sm-6 ">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip"
-            title="Project Four - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/4.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/4.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -201,9 +202,8 @@
     <div class="col-md-3 col-sm-6 ">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip"
-            title="Project Five - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-05-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/5.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/5.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -213,9 +213,8 @@
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip"
-            title="Project Six - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-06-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/6.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/6.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -225,9 +224,8 @@
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip"
-            title="Project Seven - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-07-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/7.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/7.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -237,9 +235,8 @@
     <div class="col-md-3 col-sm-6">
       <div class="overlay-effect effects clearfix">
         <div class="img">
-          <a href="assets/img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip"
-            title="Project Eight - Lorem Ipsum"><img class="grayscale"
-              src="assets/img/portfolio/portfolio-08-thumbnail.jpg" alt="Portfolio Item"></a>
+          <a href="assets/img/portfolio/8.jpg" data-lightbox="roadtrip" title="Lữ Ái Vy"><img
+              class="grayscale" src="assets/img/portfolio/8.jpg" alt="Portfolio Item"></a>
         </div>
       </div>
     </div>
@@ -247,180 +244,108 @@
   </div>
   <!--/row-->
 </div>
-<!--/.container-->
-<!-- ==========================
-  PORTFOLIO SECTION END
-  =========================== -->
-
-
-
-
-<!-- ==========================
-  CUSTOM SPACER
-  =========================== -->
-<div class="spacer-cta text-center">
+<section class="swag text-center" id="portfolio" #video>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="index.html#contact" class="outline-btn">hire john doe</a>
-      </div>
+    <!-- Headline -->
+    <div class="row justify-content-center">
+      <h1 class="arrow">
+        <span>Thông tin thêm</span>
+      </h1>
     </div>
   </div>
-</div>
-<!-- ==========================
-  CUSTOM SPACER END
-  =========================== -->
-
-
-
-<!-- ==========================
-  BLOG SECTION
-  =========================== -->
-
-<!-- ==========================
-  BLOG SECTION END
-  =========================== -->
-
-
-
-<!-- ==========================
-  CLIENT SECTION
-  =========================== -->
+</section>
 <div class="container-fluid">
-  <div class="row color-bg">
+  <div class="row">
     <!-- Left Image -->
     <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
-      <div class="about-image" style="background-image:url(assets/img/clients.png)"></div>
+      <div class="about-image" style="background-image:url(assets/img/blog1.jpg)"></div>
     </div>
     <!-- Clients / Testimonials -->
     <div class="col-md-6 nopadding about-text">
-      <h6>What our clients said</h6>
+      <h6></h6>
       <div id="clientSlider">
         <ul class="slides">
           <li>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Pete
-                Rock, A New Tomorrow</small></p>
+            <p>Vincie khoe giọng đầy nội lực trong sáng tác mới “Đưa em về biển cả mênh mông” của Dật Hanh <br> <small>
+                <a href="https://yeah1.com/viet-nam/vincie-khoe-giong-day-noi-luc-trong-sang-tac-moi-dua-em-ve-bien-ca-menh-mong-cua-dat-hanh-NRE6PPlXaW.html?fbclid=IwAR1DQIy9nuDufKfITAsDmPNdEFeTSduIAa_q7Plll29uQS4inCOxMITIbeg"
+                  target="_blank" rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
           </li>
           <li>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Michael
-                Snowden, Creativeland CEO</small></p>
+            <p>Giọng hát trẻ Vincie tung sản phẩm solo do chính mình sáng tác<br> <small>
+                <a href="https://yeah1.com/viet-nam/giong-hat-tre-vincie-tung-san-pham-solo-do-chinh-minh-sang-tac-znaNv6jGad.html?fbclid=IwAR3t7kW8ccyXS28YuxNjook-CZMqgqcR5oTPsXtmCKjr2vT_X6zBFT0bMPc"
+                  target="_blank" rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
           </li>
           <li>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br> <small>- Tom
-                Davis, GreenWonder</small></p>
+            <p>Top 8 Sao Mai miền Nam, Vincie bày tỏ khó khăn khi làm hoạt động nghệ thuật độc lập<br> <small>
+                <a href="https://vietgiaitri.com/top-8-sao-mai-mien-nam-vincie-bay-to-kho-khan-khi-lam-hoat-dong-nghe-thuat-doc-lap-20220119i6276206/"
+                  target="_blank" rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
+          </li>
+          <li>
+            <p>Top 8 Sao Mai miền Nam, Vincie đầy mạnh mẽ trong bản disco “Khung trời của em”<br> <small>
+                <a href="https://www.saokul.com/2022/01/top-8-sao-mai-mien-nam-vincie-ay-manh.html" target="_blank"
+                  rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
+          </li>
+          <li>
+            <p>Giọng ca trẻ Vincie ủng hộ phong trào bình đẳng giới trong ca khúc mới<br> <small>
+                <a href="https://gioitreviet.vn/giong-ca-tre-vincie-ung-ho-phong-trao-binh-dang-gioi-trong-ca-khuc-moi/?fbclid=IwAR3glTnLCEHXAIe-3r8zm6myCEJ664znXi7wUdq7kxSdxVyK0zWvFPS4dI0"
+                  target="_blank" rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
+          </li>
+          <li>
+            <p>Vincie lột xác trong dự án âm nhạc tự sáng tác “Khung trời của em”<br> <small>
+                <a href="https://www.doisongvanhoa.vn/2022/01/vincie-lot-xac-trong-du-am-nhac-tu-sang.html?m=1&fbclid=IwAR3BreAHN0tspD3g-WXYD9VMBM6ziTLO8C0zFp9SI2Fm-zxeNqEjRN1d8aU"
+                  target="_blank" rel="noopener noreferrer"> Xem ngay <i class="mdi mdi-arrow-right"></i> </a>
+              </small></p>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-<!-- ==========================
-  CLIENTS SECTION END
-  =========================== -->
 
-
-
-
-
-<!-- ==========================
-  NEWSLETTER SECTION
-  =========================== -->
-<section>
-  <div class="container-fluid">
-    <div class="row color-bg">
-      <div class="col-md-6 nopadding subscribe text-center">
-        <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
-        <form action="index.html#">
-          <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
-          <input type="submit" name="" value="Send"><!-- Submit Button -->
-        </form>
-      </div>
-      <div class="col-md-6 nopadding features-intro-img">
-        <div class="about-image" style="background-image:url(assets/img/newsletter.png)"></div><!-- Right Image -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ==========================
-  NEWSLETTER SECTION END
-  =========================== -->
-
-
-
-<!-- ==========================
-  CONTACT SECTION
-  =========================== -->
-<section class="text-center section-padding contact-wrap" id="contact">
+<section class="text-center section-padding contact-wrap" id="contact" #contact>
   <!-- To Top Button -->
-  <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+  <a (click)="scroll(home)" class="up-btn cursor-pointer"><i class="mdi mdi-arrow-up"></i></a>
   <div class="container">
     <!-- Headline -->
     <div class="row">
       <div class="col-md-12">
-        <h1 class="arrow">Drop <span>me</span> a line</h1>
+        <h1 class="arrow">Liên hệ</h1>
       </div>
     </div>
     <div class="row contact-details">
       <!-- Adress Box -->
       <div class="col-md-4">
         <div class="dark-box box-hover">
-          <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-          <p>23 Ipsum street, New York</p>
+          <h2><i class="mdi mdi-home-map-marker"></i><span>Địa chỉ</span></h2>
+          <p>Tp. Hồ Chí Minh</p>
         </div>
       </div>
       <!-- Phone Number Box -->
       <div class="col-md-4">
         <div class="dark-box box-hover">
-          <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-          <p>+12 345 6789</p>
+          <h2><i class="mdi mdi-phone"></i><span>Điện thoại</span></h2>
+          <p><a href="tel:0907397498">0907 397 498</a></p>
         </div>
       </div>
       <!-- E-Mail Box -->
       <div class="col-md-4">
         <div class="dark-box box-hover">
-          <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-          <p><a href="index.html#">info@themewagon.com</a></p>
+          <h2><i class="mdi mdi-contact-mail"></i><span>Email</span></h2>
+          <p><a href="mailto:Vincie.music2021@gmail.com">Vincie.music2021@gmail.com</a></p>
         </div>
       </div>
     </div>
     <div class="row">
-      <!-- Google Maps (Change your Settings below) -->
-      <div class="col-md-6">
-        <div id="googlemaps"></div>
-      </div>
-      <!-- Contact Form -->
-      <div class="col-md-6 contact">
-        <form role="form">
-          <!-- Name -->
-          <div class="row">
-            <div class="col-md-6">
-              <!-- E-Mail -->
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your name">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- Phone Number -->
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email address">
-              </div>
-            </div>
-          </div>
-          <!-- Message Area -->
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
-          </div>
-          <!-- Subtmit Button -->
-          <button type="submit" class="btn btn-send">
-            Send message
-          </button>
-        </form>
+      <div class="col-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40079.84964516849!2d106.66786041019759!3d10.77948317571251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1658321424171!5m2!1svi!2s"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <br>
@@ -428,30 +353,27 @@
     <div class="row">
       <div class="col-md-12">
         <ul class="social-buttons">
-          <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
-          <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
-          <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-          <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
-          <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+          <li><a
+              href="https://open.spotify.com/artist/1Ikmc33ZaK5jxUNCnqJxUw?fbclid=IwAR1obdd2DU_-IcJEp8M4yMqcd8BxQtW_nP-rPuBCKg93I5xepQcz-v_2NWU"
+              class="social-btn" target="_blank"><i class="mdi mdi-spotify"></i></a></li><!-- twitter -->
+          <li><a href="https://www.facebook.com/Tuongvisinger1" target="_blank" class="social-btn"><i
+                class="mdi mdi-facebook-box"></i></a></li><!-- facebook -->
+          <li><a href="https://www.instagram.com/luiv_insta/" class="social-btn" target="_blank"><i
+                class="mdi mdi-instagram"></i></a></li><!-- deviantart -->
+          <li><a href="https://www.youtube.com/channel/UCy0PR6DSieQVT6sidfjT8Ag" class="social-btn" target="_blank"><i
+                class="mdi mdi-youtube"></i></a></li><!-- youtube -->
         </ul>
       </div>
     </div>
   </div>
 </section>
-<!-- ==========================
-  CONTACT SECTION END
-  =========================== -->
-
-
-
-<!-- ==========================
-  FOOTER SECTION
-  =========================== -->
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+        <p>Bản quyển thuộc về &copy; {{dateYear}} <a target="_blank" href="https://www.facebook.com/Tuongvisinger1">Lữ
+            Ái Vy</a></p>
+            <iframe src="https://www.nhaccuatui.com/mh/background/mPiHbFPLK1zB" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
       </div>
     </div>
   </div>

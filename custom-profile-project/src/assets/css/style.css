@@ -31,14 +31,16 @@ a {
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
 	outline:none!important;
+  cursor: pointer;
 }
 a:hover,a:focus,a:active {
-	color:#0D0D0D;
+	color:#E04343 !important;
 	text-decoration:none;
 	outline:none!important;
+  transform:scale(1.2)
 }
 p {
-	color:#8c9398;
+	color: black;
 	word-spacing:1px;
 	line-height:25px;
 	font-size:14px;
@@ -452,7 +454,7 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	/* background: url('../img/header-bg.jpg') right bottom no-repeat; */
+	background: url('../img/header-bg.jpg') right bottom no-repeat;
 	background-size: contain;
 	padding:110px 0 100px 0;
 	height:auto;
@@ -576,6 +578,7 @@ h1.arrow span {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
+  background-position: center;
 }
 .color-bg {
 	background: #E04343;
@@ -764,7 +767,7 @@ img.grayscale:hover {
 	display:block;
 	margin:0;
 	padding:0;
-	height:auto;
+	height:300px;
 }
 .overlay {
 	display:block;
@@ -1115,10 +1118,13 @@ ul.slides li {
 	}
 
 	.hero h1 {
-		font-size: 100px;
+		font-size: 60px;
 		line-height: 80px;
-		margin-top: 65px;
-}
+    margin: 85px 0px
+  }
+  .hero h3 {
+    display: none;
+  }
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
